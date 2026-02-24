@@ -1,8 +1,34 @@
 {
-  "total": 71,
+  "total": 73,
   "offset": 0,
-  "limit": 71,
+  "limit": 73,
   "data": [
+    {
+      "path": "/en/publish/2026/02/building-adobe-express-add-ons-in-24-hours",
+      "image": "/en/publish/2026/02/media_18fed589e57236e20f3ef7c5a6d75c91d70dc0bb1.jpg?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "Building Adobe Express Add‑ons in 24 Hours: Pixel Pluck’s Hackathon Story",
+      "author": "Keshav Kumar",
+      "description": "When our team first saw the announcement of an Adobe Express Add-ons for Enterprise hackathon through our college’s training and placement cell, we didn’t just ...",
+      "tags": "[\"adobe-express\",\"adobe-express-add-ons\",\"adobe-express-addons\",\"add-on-development\",\"extensibility\",\"hackathon\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1771930944",
+      "Removed from Medium?": ""
+    },
+    {
+      "path": "/en/publish/2026/02/building-the-agentic-web-with-adobe-experience-manager",
+      "image": "/en/publish/2026/02/media_10857affba311a9dc54ce9b851148c604e4cb8aef.jpg?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "Building the Agentic Web with Adobe Experience Manager",
+      "author": "Sherrie Rohde",
+      "description": "If you’ve been building on the web for a while, this moment probably feels familiar.",
+      "tags": "[\"adobe-experience-manager\",\"AEM\",\"agentic-web\",\"adobe-experience-cloud\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1771924652",
+      "Removed from Medium?": ""
+    },
     {
       "path": "/en/publish/2025/12/adobe-express-add-on-platform-updates-winter-2025-digest",
       "image": "/en/publish/2025/12/media_143a92fd72064af8a4eb5794fa8fb2f0ee40e45e0.png?width=1200&format=pjpg&optimize=medium",
@@ -273,7 +299,7 @@
       "tags": "[\"adobe-commerce\",\"aem-developer\",\"edge-delivery-services\",\"composable-commerce\",\"adobe-experience-cloud\"]",
       "imageAlt": "︎",
       "robots": "",
-      "lastModified": "1748360918",
+      "lastModified": "1771238856",
       "Removed from Medium?": ""
     },
     {
@@ -941,5 +967,5 @@
     "Removed from Medium?"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-02-24T14:54:47.271Z"
+  "generatedAt": "2026-02-24T16:02:59.790Z"
 }

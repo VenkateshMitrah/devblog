@@ -1,7 +1,7 @@
 {
-  "total": 74,
+  "total": 75,
   "offset": 0,
-  "limit": 74,
+  "limit": 75,
   "data": [
     {
       "path": "/en/publish/2026/02/building-adobe-express-add-ons-in-24-hours",
@@ -49,6 +49,22 @@
       "Removed from Medium?": "",
       "sortDateTimestamp": "1771891200",
       "sortDate": "2026-02-24",
+      "sortDateTimestampLegacy": ""
+    },
+    {
+      "path": "/en/publish/2026/02/the-agentic-evolution-of-adobe-experience-manager",
+      "image": "/en/publish/2026/02/media_1068272d182892f013bdb465375b826e00879c5e6.jpg?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "The Agentic Evolution of Adobe Experience Manager",
+      "author": "Sherrie Rohde",
+      "description": "Adobe Experience Manager is entering a new phase. And this one changes how work actually gets done.",
+      "tags": "[\"adobe-experience-manager\",\"aem\",\"agentic-web\",\"adobe-experience-cloud\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1772038233",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1771977600",
+      "sortDate": "2026-02-25",
       "sortDateTimestampLegacy": ""
     },
     {
@@ -1205,5 +1221,5 @@
     "sortDateTimestampLegacy"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-02-25T14:54:26.919Z"
+  "generatedAt": "2026-02-26T09:55:38.347Z"
 }

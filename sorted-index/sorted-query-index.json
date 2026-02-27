@@ -1,7 +1,7 @@
 {
-  "total": 79,
+  "total": 81,
   "offset": 0,
-  "limit": 79,
+  "limit": 81,
   "data": [
     {
       "path": "/en/publish/2026/02/building-adobe-express-add-ons-in-24-hours",
@@ -65,6 +65,22 @@
       "Removed from Medium?": "",
       "sortDateTimestamp": "1771977600",
       "sortDate": "2026-02-25",
+      "sortDateTimestampLegacy": ""
+    },
+    {
+      "path": "/en/publish/2026/02/new-app-builder-console-features-logs-ui-and-cdn-management",
+      "image": "/en/publish/2026/02/media_1c00002ba6ead45eb625a39ed67f2d62809eec440.jpg?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "New App Builder Console Features: Logs UI and CDN Management",
+      "author": "Rohan Kapoor",
+      "description": "Building serverless integrations should be fast and simple. That's the core promise of Adobe App Builder: remove infrastructure complexity so developers can focus on building ...",
+      "tags": "[\"adobe-app-builder\",\"app-builder\",\"logging\",\"cdn\",\"cacaching\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1772188787",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1772150400",
+      "sortDate": "2026-02-27",
       "sortDateTimestampLegacy": ""
     },
     {
@@ -593,6 +609,22 @@
       "Removed from Medium?": "",
       "sortDateTimestamp": "1723161600",
       "sortDate": "2024-08-09",
+      "sortDateTimestampLegacy": ""
+    },
+    {
+      "path": "/en/publish/2024/07/introducing-the-adobe-pdf-watermark-api",
+      "image": "/en/publish/2024/07/media_18a539ff5569ee1b913ce34baeae699ddb5dc4e74.png?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "Introducing the Adobe PDF Watermark API",
+      "author": "Raymond Camden",
+      "description": "Watermarks provide an important feature for PDFs by allowing you to ‘mark’ a document. This can be used to signify who the document was created ...",
+      "tags": "[\"adobe-document-cloud\",\"pdf\",\"adobe-acrobat\",\"extensibility\",\"watermark\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1772097402",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1722211200",
+      "sortDate": "2024-07-29",
       "sortDateTimestampLegacy": ""
     },
     {
@@ -1285,5 +1317,5 @@
     "sortDateTimestampLegacy"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-02-26T20:42:21.827Z"
+  "generatedAt": "2026-02-27T11:36:00.347Z"
 }

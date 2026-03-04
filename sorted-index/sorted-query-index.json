@@ -1,8 +1,25 @@
 {
-  "total": 81,
+  "total": 82,
   "offset": 0,
-  "limit": 81,
+  "limit": 82,
   "data": [
+    {
+      "path": "/en/publish/2026/03/from-local-to-live-how-to-publish-your-adobe-express-add-on",
+      "image": "/en/publish/2026/03/media_1afefda6e3ca7fa5f14ad6791e5177bd8a21bab1e.png?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "From Local to Live: How to Publish Your Adobe Express Add-on",
+      "author": "Ingo Eichel",
+      "description": "You’ve built your first Adobe Express add-on. It works perfectly on your local machine. Now comes the big question: How do you get it into ...",
+      "tags": "[\"adobe-express\",\"adobe-express-add-ons\",\"adobe-express-addons\",\"add-on-development\",\"extensibility\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1772630013",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1772582400",
+      "sortDate": "2026-03-04",
+      "sortDateTimestampLegacy": "",
+      "updatedDate": ""
+    },
     {
       "path": "/en/publish/2026/02/building-adobe-express-add-ons-in-24-hours",
       "image": "/en/publish/2026/02/media_18fed589e57236e20f3ef7c5a6d75c91d70dc0bb1.jpg?width=1200&format=pjpg&optimize=medium",
@@ -200,12 +217,12 @@
       "tags": "[\"adobe-express-addons\",\"adobe-express\",\"ai\",\"hackathon\",\"extensibility\"]",
       "imageAlt": "",
       "robots": "",
-      "lastModified": "1772606903",
+      "lastModified": "1772626940",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1756339200",
       "sortDate": "2025-08-28",
       "sortDateTimestampLegacy": "",
-      "updatedDate": "2026-03-04"
+      "updatedDate": ""
     },
     {
       "path": "/en/publish/2025/08/meet-the-winners-of-the-first-adobe-express-add-ons-hackathon",
@@ -336,7 +353,7 @@
       "tags": "[\"ai\",\"platform\",\"adobe-experience-platform\",\"enterprise-ai\",\"machine-learning\"]",
       "imageAlt": "︎Some authors of the paper displaying the DSRI AI Incidents and Best Practices Paper Award won at the 39th Annual AAAI Conference on Artificial Intelligence.",
       "robots": "",
-      "lastModified": "1771238856",
+      "lastModified": "1772626839",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1743552000",
       "sortDate": "2025-04-02",
@@ -1399,5 +1416,5 @@
     "updatedDate"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-03-04T14:40:16.804Z"
+  "generatedAt": "2026-03-04T15:49:23.618Z"
 }

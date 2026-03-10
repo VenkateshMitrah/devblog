@@ -1,7 +1,7 @@
 {
-  "total": 82,
+  "total": 83,
   "offset": 0,
-  "limit": 82,
+  "limit": 83,
   "data": [
     {
       "path": "/en/publish/2026/03/from-local-to-live-how-to-publish-your-adobe-express-add-on",
@@ -149,7 +149,7 @@
       "tags": "[\"adobe-exchange-marketplace\",\"adobe-express\",\"adobe-express-add-ons\",\"add-on-development\"]",
       "imageAlt": "",
       "robots": "",
-      "lastModified": "1772708190",
+      "lastModified": "1771238856",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1765843200",
       "sortDate": "2025-12-16",
@@ -561,6 +561,23 @@
       "Removed from Medium?": "",
       "sortDateTimestamp": "1733356800",
       "sortDate": "2024-12-05",
+      "sortDateTimestampLegacy": "",
+      "updatedDate": ""
+    },
+    {
+      "path": "/en/publish/2024/11/developer-spotlight-building-adobe-express-add-ons-with-prasanta-barman",
+      "image": "/en/publish/2024/11/media_1c6b7463c28c543bad4fa8f8ae27eb3c5ce6a3f96.png?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "Developer Spotlight: Building Adobe Express Add-Ons with Prasanta Barman",
+      "author": "Colene Chow",
+      "description": "The Adobe Express developer community has been growing rapidly over the past year, and we have been blown away by the amount of talent that’s ...",
+      "tags": "[\"adobe-express\",\"adobe-express-add-ons\",\"adobe-creative-cloud\",\"color-blindness\",\"accessibility\"]",
+      "imageAlt": "︎",
+      "robots": "",
+      "lastModified": "1771238856",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1733443200",
+      "sortDate": "2024-12-06",
       "sortDateTimestampLegacy": "",
       "updatedDate": ""
     },
@@ -1416,5 +1433,5 @@
     "updatedDate"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-03-10T14:54:03.793Z"
+  "generatedAt": "2026-03-10T17:50:07.382Z"
 }

@@ -1,7 +1,7 @@
 {
-  "total": 82,
+  "total": 81,
   "offset": 0,
-  "limit": 82,
+  "limit": 81,
   "data": [
     {
       "path": "/en/publish/2026/03/from-local-to-live-how-to-publish-your-adobe-express-add-on",
@@ -544,23 +544,6 @@
       "Removed from Medium?": "",
       "sortDateTimestamp": "1728604800",
       "sortDate": "2024-10-11",
-      "sortDateTimestampLegacy": "",
-      "updatedDate": ""
-    },
-    {
-      "path": "/en/publish/2024/11/behind-the-scenes-with-ammar-alim-devsecops-leader",
-      "image": "/en/publish/2024/11/media_11b0905709ab24e95c7500d9cedd320b0e00da503.png?width=1200&format=pjpg&optimize=medium",
-      "date": "",
-      "title": "Behind the Scenes with Ammar Alim, DevSecOps Leader",
-      "author": "Renae Kang",
-      "description": "Adobe’s DevSecOps team creates innovative solutions that seamlessly integrates application and infrastructure security into Agile and DevOps workflows. By embedding security into these solutions from ...",
-      "tags": "[\"devsecops\",\"cloud-security\",\"security\",\"security-culture\",\"product-security\"]",
-      "imageAlt": "︎",
-      "robots": "",
-      "lastModified": "1771238856",
-      "Removed from Medium?": "",
-      "sortDateTimestamp": "1733356800",
-      "sortDate": "2024-12-05",
       "sortDateTimestampLegacy": "",
       "updatedDate": ""
     },
@@ -1416,5 +1399,5 @@
     "updatedDate"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-03-10T18:56:32.010Z"
+  "generatedAt": "2026-03-13T18:50:11.403Z"
 }

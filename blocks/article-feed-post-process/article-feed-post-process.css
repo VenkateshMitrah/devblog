@@ -20,6 +20,7 @@
 .article-feed-post-process .article-card .article-card-body .article-card-description {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+    -webkit-line-clamp: 3;
 }
 
 .article-feed-post-process .article-card .article-card-body h3 {

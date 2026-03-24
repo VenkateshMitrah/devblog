@@ -16,3 +16,12 @@
 .article-feed-post-process .article-card .article-card-body {
     padding: 0 2rem !important;
 }
+
+.article-feed-post-process .article-card .article-card-body .article-card-description {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.article-feed-post-process .article-card .article-card-body h3 {
+    margin-bottom: 5px !important;
+}

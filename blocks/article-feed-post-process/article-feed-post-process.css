@@ -12,3 +12,7 @@
     height: 215px !important;
     background-color: transparent;
 }
+
+.article-feed-post-process .article-card .article-card-body {
+    padding: 0 2rem !important;
+}

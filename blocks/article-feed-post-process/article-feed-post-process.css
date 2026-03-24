@@ -21,6 +21,9 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     -webkit-line-clamp: 3;
+    font-size: var(--type-detail-m-size);
+    font-weight: var(--type-detail-all-weight);
+    line-height: 1.5;
 }
 
 .article-feed-post-process .article-card .article-card-body h3 {

@@ -1,1 +1,14 @@
 /* No CSS here yet, but this file is required */
+.article-feed .article-card .article-image,
+.article-feed .cards-card-image,
+.article-feed picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+}
+.article-feed-post-process .article-card .article-card-image {
+    height: 215px !important;
+    background-color: transparent;
+}

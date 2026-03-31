@@ -50,6 +50,15 @@ figcaption {
   -webkit-line-clamp: 3 !important;
 }
 
+.featured-article-card-image {
+  height: 350px !important;
+  width: 55% !important;
+}
+
+.featured-article-card-body {
+  width: 45% !important;
+}
+
 main .section:first-of-type:not([class*='-spacing']) > .content:first-of-type {
   margin-top: var(--page-top-spacing);
 }

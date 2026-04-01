@@ -21,12 +21,6 @@ export default async function init(blockEl) {
 
   const items = socialBlock.querySelectorAll(':scope > div');
 
-  let headingText = '';
-  const className = socialBlock.className;
-  headingText = className.split(' ')[0].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-
-  const heading = createTag('h3', { class: 'author-more-title' }, headingText);
-
   const ul = createTag('ul', { class: 'author-more-list' });
 
   let isAdobeEmployee = false;
@@ -52,7 +46,6 @@ export default async function init(blockEl) {
 
 
   // adding badge
-
   if (isAdobeEmployee) {
     const title = blockEl.querySelector('.author-header-title');
 
@@ -63,9 +56,11 @@ export default async function init(blockEl) {
       title.append(badge);
     }
   }
-
-  const wrapper = createTag('div', { class: 'author-more-info' });
-  wrapper.append(heading, ul);
-  blockEl.append(wrapper);
+  const getHeader = blockEl.querySelector('.author-header-title');
+  const wrapper = blockEl.querySelector('.author-header-bio');
+  if (wrapper && getHeader) {
+    wrapper.prepend(getHeader);
+    wrapper.append(ul);
+  }
   socialBlock.remove();
 }

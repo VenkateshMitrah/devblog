@@ -17,7 +17,7 @@
       <guid isPermaLink="false">rss-test-002</guid>
       <description><![CDATA[This is a second test item to verify that RSS updates correctly detected in Inoreader and other feed readers.]]></description>
       <dc:creator><![CDATA[Test Author]]></dc:creator>
-      <pubDate>Fri, 04 Apr 2026 15:30:00 GMT</pubDate>
+      <pubDate>Fri, 03 Apr 2026 15:30:00 GMT</pubDate>
       <category>Testing</category>
       <enclosure url="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=60" type="image/jpeg" length="0"/>
       <media:content url="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=60" medium="image"/>

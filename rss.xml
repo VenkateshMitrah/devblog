@@ -15,7 +15,7 @@
       <title><![CDATA[Test Update: RSS Working Properly]]></title>
       <link>https://blog.developer.adobe.com/en/publish/test/rss-update-002</link>
       <guid isPermaLink="false">rss-test-002</guid>
-      <description><![CDATA[This is a second test item to verify that RSS updates correctly detected in Inoreader and other feed readers.]]><description>
+      <description><![CDATA[This is a second test item to verify that RSS updates correctly detected in Inoreader and other feed readers.]]></description>
       <dc:creator><![CDATA[Test Author]]></dc:creator>
       <pubDate>Fri, 04 Apr 2026 15:30:00 GMT</pubDate>
       <category>Testing</category>

@@ -59,6 +59,105 @@ const OVERRIDE_MILO_BLOCKS = addDevBlogBlockOverrides([{
   lcpImg?.setAttribute('loading', 'eager');
 }());
 
+/* RSS TOOLTIP + COPY FEATURE */
+
+const RSS_SELECTOR = '.feds-nav a[href*="rss.xml"]';
+
+function showTooltipMessage(tooltip, message, duration = 2000) {
+  const original = tooltip.dataset.default;
+  tooltip.textContent = message;
+  tooltip.classList.add('show');
+
+  setTimeout(() => {
+    tooltip.textContent = original;
+    tooltip.classList.remove('show');
+  }, duration);
+}
+
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0';
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  }
+}
+
+function enhanceRSSLink(link) {
+  if (link.dataset.rssEnhanced) return;
+  link.dataset.rssEnhanced = 'true';
+
+  const navItem = link.closest('.feds-navItem') || link.parentElement;
+  navItem.style.position = 'relative';
+
+  const tooltip = document.createElement('div');
+  tooltip.className = 'rss-tooltip';
+  tooltip.textContent = 'Subscribe via RSS (Shift+Click to copy)';
+  tooltip.dataset.default = tooltip.textContent;
+
+  navItem.appendChild(tooltip);
+
+  // Hover
+  link.addEventListener('mouseenter', () => tooltip.classList.add('show'));
+  link.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
+
+  // Click (Shift + Click = Copy)
+  link.addEventListener('click', async (e) => {
+    if (!e.shiftKey) return;
+
+    e.preventDefault();
+    const ok = await copyToClipboard(link.href);
+
+    showTooltipMessage(
+      tooltip,
+      ok ? 'Feed URL copied!' : 'Copy failed'
+    );
+
+    link.blur(); // FIX: remove orange border
+  });
+
+  // Keyboard (Shift + Enter)
+  link.addEventListener('keydown', async (e) => {
+    if (e.key !== 'Enter' || !e.shiftKey) return;
+    e.preventDefault();
+    const ok = await copyToClipboard(link.href);
+
+    showTooltipMessage(
+      tooltip,
+      ok ? 'Feed URL copied!' : 'Copy failed'
+    );
+
+    link.blur(); 
+  });
+}
+
+function initRSS() {
+  const el = document.querySelector(RSS_SELECTOR);
+  if (el) return enhanceRSSLink(el);
+
+  const observer = new MutationObserver(() => {
+    const rss = document.querySelector(RSS_SELECTOR);
+    if (rss) {
+      observer.disconnect();
+      enhanceRSSLink(rss);
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+  setTimeout(() => observer.disconnect(), 10000);
+}
+
+initRSS();
+
+export { enhanceRSSLink };
+
 /*
  * ------------------------------------------------------------
  * Edit below at your own risk

@@ -327,6 +327,10 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
     outline: 2px solid #fa802f;
     outline-offset: 2px;
   }
+  
+  .feds-brand-container > .feds-brand {
+    margin-left: 12px;
+  }
 }
 
 /* RSS ICONS */

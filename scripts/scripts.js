@@ -356,6 +356,7 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
   const navWrapper = document.querySelector('.feds-nav-wrapper');
 
   const mq = window.matchMedia('(max-width: 899px)');
+  const header = document.querySelector('header.global-navigation');
 
   function moveSearch(e) {
     if (!nav || !searchElement) return;
@@ -376,11 +377,12 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
         nav.appendChild(searchElement);
       }
     }
+
+    if (header) header.classList.add('nav-ready');
   }
 
   moveSearch(mq);
   mq.addEventListener('change', moveSearch);
-  topNav.style.opacity = '1';
 
   initSidekick();
 

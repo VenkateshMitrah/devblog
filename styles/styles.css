@@ -259,7 +259,6 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
 
   /* RSS container */
   .feds-nav .feds-navItem:has(> a[href*="rss.xml"]) {
-    /* margin-left: auto; */
     margin-right: 8px;
     display: flex;
     align-items: center;
@@ -342,10 +341,6 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
 
   .feds-nav .feds-navItem .feds-navLink {
     margin-top: 5px;
-  }
-  
-  .feds-topnav {
-    opacity: 0;
   }
 }
 
@@ -496,5 +491,22 @@ pre {
 
   .featured-article-card-body {
     width: 45% !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .feds-nav .feds-navItem:has(> a[href*="rss.xml"]),
+  .feds-nav .feds-navItem:has(> button[daa-ll^="Subscribe"]) {
+    display: none;
+  }
+
+  header.nav-ready .feds-nav .feds-navItem:has(> a[href*="rss.xml"]),
+  header.nav-ready .feds-nav .feds-navItem:has(> button[daa-ll^="Subscribe"]) {
+    display: flex;
+    align-items: center;
+  }
+
+  header.nav-ready .feds-nav blog-search {
+    margin-left: auto;
   }
 }

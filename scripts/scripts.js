@@ -380,6 +380,7 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
 
   moveSearch(mq);
   mq.addEventListener('change', moveSearch);
+  topNav.style.opacity = '1';
 
   initSidekick();
 

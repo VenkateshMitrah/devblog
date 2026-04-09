@@ -343,6 +343,10 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
   .feds-nav .feds-navItem .feds-navLink {
     margin-top: 5px;
   }
+  
+  .feds-topnav {
+    opacity: 0;
+  }
 }
 
 /* RSS ICONS */

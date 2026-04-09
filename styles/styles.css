@@ -254,11 +254,12 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
   .feds-nav-wrapper .feds-nav {
     flex-grow: 1;
     align-items: center;
+    margin-right: 10px;
   }
 
   /* RSS container */
   .feds-nav .feds-navItem:has(> a[href*="rss.xml"]) {
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: 8px;
     display: flex;
     align-items: center;
@@ -331,6 +332,17 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
   .feds-brand-container > .feds-brand {
     margin-left: 12px;
   }
+
+  .feds-navItem .feds-popup {
+    right: 0;
+    left: auto;
+    min-width: 260px;
+    margin-top: 12px;
+  }
+
+  .feds-nav .feds-navItem .feds-navLink {
+    margin-top: 5px;
+  }
 }
 
 /* RSS ICONS */
@@ -399,6 +411,15 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
   .rss-tooltip {
     display: none;
   }
+ 
+  .feds-topnav .feds-brand-container .feds-toggle {
+    width: 56px;
+  }
+
+  .feds-topnav .feds-brand-container .feds-brand {
+    padding: 0;
+  }
+
 }
 
 @media (min-width: 600px) {

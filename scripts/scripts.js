@@ -93,6 +93,7 @@ async function copyToClipboard(text) {
 function enhanceRSSLink(link) {
   if (link.dataset.rssEnhanced) return;
   link.dataset.rssEnhanced = 'true';
+  link.setAttribute('target', '_blank');
 
   const navItem = link.closest('.feds-navItem') || link.parentElement;
   navItem.style.position = 'relative';
@@ -350,23 +351,36 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
   
   console.log('Injecting search into navigation. Target element:', topNav);
   const searchElement = document.createElement('blog-search');
-  // Prefer placing search before the logo so it appears to the left of it
-  const logo = topNav?.querySelector('a.feds-logo');
-  if (logo) {
-    const containerChildWithLogo = Array.from(topNav.children).find((child) => child.contains(logo));
-    if (containerChildWithLogo) {
-      topNav.insertBefore(searchElement, containerChildWithLogo);
-      console.log('Search element inserted before logo:', searchElement);
-    } else {
-      // If logo isn't within a direct child, prepend as a safe default
-      topNav.insertBefore(searchElement, topNav.firstChild);
-      console.log('Search element prepended to topNav:', searchElement);
+
+  const nav = document.querySelector('.feds-nav');
+  const navWrapper = document.querySelector('.feds-nav-wrapper');
+
+  const mq = window.matchMedia('(max-width: 899px)');
+
+  function moveSearch(e) {
+    if (!nav || !searchElement) return;
+
+    if (e.matches) { //mobile
+      if (topNav && navWrapper && searchElement.parentElement !== topNav) {
+        topNav.insertBefore(searchElement, navWrapper.nextSibling);
+      }
+    } else { //desktop
+      const rssItem = nav
+        .querySelector('.feds-navItem a[href*="rss.xml"], .feds-navItem button[daa-ll^="RSS"]')
+        ?.closest('.feds-navItem');
+
+      if (rssItem && searchElement.parentElement !== nav) {
+        nav.insertBefore(searchElement, rssItem);
+
+      } else if (!rssItem && searchElement.parentElement !== nav) {
+        nav.appendChild(searchElement);
+      }
     }
-  } else {
-    // Fallback: append if no logo was found
-    topNav.appendChild(searchElement);
-    console.log('Search element appended to topNav (logo not found):', searchElement);
   }
-  
+
+  moveSearch(mq);
+  mq.addEventListener('change', moveSearch);
+
   initSidekick();
+
 }());

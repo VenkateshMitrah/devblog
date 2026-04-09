@@ -391,7 +391,7 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
 
 @media (max-width: 899px) {
 
-  .feds-nav .feds-navItem>a[href*="rss.xml"] {
+  /* .feds-nav .feds-navItem>a[href*="rss.xml"] {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -406,7 +406,7 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
     width: 20px;
     height: 20px;
     background: var(--rss-icon-mobile) center/contain no-repeat;
-  }
+  } */
 
   .rss-tooltip {
     display: none;

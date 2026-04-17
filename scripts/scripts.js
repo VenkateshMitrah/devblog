@@ -135,7 +135,7 @@ function enhanceRSSLink(link) {
       ok ? 'Feed URL copied!' : 'Copy failed'
     );
 
-    link.blur(); 
+    link.blur();
   });
 }
 
@@ -330,11 +330,11 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
     logoLink.href = '/';
     console.log('Logo link updated to:', logoLink.href);
   }
-  
+
   // Import and register search web component first
   await import('../web-components/search/blog-search.js');
   console.log('Search web component imported and registered');
-  
+
   // Then inject search into navigation after Milo loads
   function waitForNav() {
     return new Promise((resolve) => {
@@ -348,7 +348,7 @@ const { loadArea, setConfig, getMetadata } = await import(`${miloLibs}/utils/uti
   }
 
   const topNav = await waitForNav();
-  
+
   console.log('Injecting search into navigation. Target element:', topNav);
   const searchElement = document.createElement('blog-search');
 

@@ -327,8 +327,8 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
     outline: 2px solid #fa802f;
     outline-offset: 2px;
   }
-  
-  .feds-brand-container > .feds-brand {
+
+  .feds-brand-container>.feds-brand {
     margin-left: 12px;
   }
 
@@ -343,11 +343,12 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
     margin-top: 5px;
   }
 
-  .feds-navItem--active > .feds-navLink:before {
+  /* To fix the border issue on gnav */
+  .feds-navItem--active>.feds-navLink:before {
     border-bottom: none !important;
   }
 
-  .feds-navItem--active > .feds-navLink {
+  .feds-navItem--active>.feds-navLink {
     font-weight: 500 !important;
   }
 }

@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+const fs = require('fs');
+const path = require('path');
+const { fileURLToPath } = require('url');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname  = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname  = path.dirname(__filename);
 
 const BASE_URL        = 'https://blog.developer.adobe.com';
 const QUERY_INDEX_URL = `${BASE_URL}/en/query-index.json`;
@@ -311,6 +311,18 @@ async function validateAuthors() {
     const authors = [];
     const report  = [];
 
+    function isSuspiciousName(name = '') {
+      const n = name.toLowerCase();
+      return (
+        n.includes('test') ||
+        n.includes('sample') ||
+        n.includes('demo') ||
+        n.includes('devblog') ||
+        n.includes('admin') ||
+        n.length < 5
+      );
+    }
+
     async function processAuthor({ name, slug, docUrl }, index) {
       if (index > 0) await delay(DELAY_BETWEEN_MS);
 
@@ -347,17 +359,6 @@ async function validateAuthors() {
 
     const results = await pLimit(authorsFromIndex, CONCURRENCY_LIMIT, processAuthor);
     // results.forEach((a) => authors.push(a));
-    function isSuspiciousName(name = '') {
-      const n = name.toLowerCase();
-      return (
-        n.includes('test') ||
-        n.includes('sample') ||
-        n.includes('demo') ||
-        n.includes('devblog') ||
-        n.includes('admin') ||
-        n.length < 5
-      );
-    }
 
     results.forEach((a) => {
       if (

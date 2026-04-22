@@ -17,7 +17,11 @@ export default async function decorate(block) {
     const authorsData = await response.json();
     const authors = authorsData
       .filter((a) => a.hasDoc)
-      .sort((a, b) => a.name.localeCompare(b.name));
+      .sort((a, b) => {
+        const dateA = new Date(a.latestArticle?.date || 0).getTime();
+        const dateB = new Date(b.latestArticle?.date || 0).getTime();
+        return dateB - dateA;
+      });
 
     if (!authors.length) {
       block.innerHTML = '<div class="authors-error"><p>No authors with individual profile pages found.</p></div>';
@@ -46,6 +50,9 @@ export default async function decorate(block) {
 
       const card = document.createElement('div');
       card.className = 'author-card';
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+
       card.innerHTML = `
         <div class="author-card-image">
           <img src="${getAuthorImage(author)}"
@@ -55,13 +62,11 @@ export default async function decorate(block) {
         </div>
         <div class="author-card-content">
           <h3 class="author-name">
-            <a href="${author.profileUrl}" target="_blank" rel="noopener noreferrer">
-              <span class="author-name-with-badges">
-                <span>${author.name}</span>
-                ${badge(String(author.isAdobeEmployee)     === 'true', 'adobe',    'Adobe')}
-                ${badge(String(author.isDeveloperChampion) === 'true', 'champion', 'Champion')}
-              </span>
-            </a>
+            <span class="author-name-with-badges">
+              <span>${author.name}</span>
+              ${badge(String(author.isAdobeEmployee) === 'true', 'adobe', 'Adobe')}
+              ${badge(String(author.isDeveloperChampion) === 'true', 'champion', 'Champion')}
+            </span>
           </h3>
           <p class="author-title">
             ${author.title || '<span class="missing">Missing Title</span>'}
@@ -72,10 +77,34 @@ export default async function decorate(block) {
             : ''}
         </div>
       `;
+
+      // card click handling
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+        window.location.href = author.profileUrl;
+      });
+
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          window.location.href = author.profileUrl;
+        }
+      });
+
       container.appendChild(card);
     });
 
     block.textContent = '';
+
+    const header = document.createElement('div');
+    header.className = 'authors-header';
+    header.innerHTML = `
+      <div class="authors-header-inner">
+        <h1>Authors</h1>
+        <p>Meet the experts sharing insights, tutorials, and innovations on Adobe Developers Blog.</p>
+      </div>
+    `;
+
+    block.appendChild(header);
     block.appendChild(container);
 
   } catch (error) {

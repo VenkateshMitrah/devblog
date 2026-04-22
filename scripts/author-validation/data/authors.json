@@ -23,21 +23,21 @@
     "name": "Aishwarya Khandelwal",
     "slug": "aishwarya-khandelwal",
     "profileUrl": "https://blog.developer.adobe.com/en/authors/aishwarya-khandelwal",
-    "title": "",
-    "linkedin": "",
+    "title": "I translate business challenges into scalable digital wins.",
+    "linkedin": "https://www.linkedin.com/in/aishwarya2khandelwal/",
     "links": [],
-    "isAdobeEmployee": false,
+    "isAdobeEmployee": true,
     "isDeveloperChampion": false,
-    "hasDoc": false,
+    "hasDoc": true,
     "docUrl": "/en/authors/aishwarya-khandelwal",
-    "docImage": "",
+    "docImage": "./media_1de31d5834786b91424c6ec13488e2f2e31feeae7.jpg?width=750&#x26;format=jpg&#x26;optimize=medium",
     "image": "/images/authors/aishwarya-khandelwal.png",
     "fallbackImage": "/images/default-images/default-image-1.png",
     "latestArticle": {
       "title": "Design Meets DAM: AEM Assets x Figma – A Turnkey Connector Is Here",
       "date": "2025-08-21"
     },
-    "isComplete": false
+    "isComplete": true
   },
   {
     "name": "Alex Castanheira",
@@ -123,21 +123,21 @@
     "name": "Aubrey Cattell",
     "slug": "aubrey-cattell",
     "profileUrl": "https://blog.developer.adobe.com/en/authors/aubrey-cattell",
-    "title": "",
-    "linkedin": "",
+    "title": "VP Product &#x26; Partnerships at Adobe | ex Autodesk",
+    "linkedin": "https://www.linkedin.com/in/acattell/",
     "links": [],
-    "isAdobeEmployee": false,
+    "isAdobeEmployee": true,
     "isDeveloperChampion": false,
-    "hasDoc": false,
+    "hasDoc": true,
     "docUrl": "/en/authors/aubrey-cattell",
-    "docImage": "",
+    "docImage": "./media_1b9130ba012fc24c225edbeca7bab49749c57c735.png?width=750&#x26;format=png&#x26;optimize=medium",
     "image": "/images/authors/aubrey-cattell.png",
     "fallbackImage": "/images/default-images/default-image-1.png",
     "latestArticle": {
       "title": "Adobe Express Platform Updates for MAX 2024: New Developer Capabilities and Explosive Growth of Our Partner Ecosystem",
       "date": "2024-10-11"
     },
-    "isComplete": false
+    "isComplete": true
   },
   {
     "name": "Ayan Choudhary",
@@ -468,21 +468,21 @@
     "name": "Manik Jindal",
     "slug": "manik-jindal",
     "profileUrl": "https://blog.developer.adobe.com/en/authors/manik-jindal",
-    "title": "",
-    "linkedin": "",
+    "title": "Senior Product Manager | Adobe Developer Platform",
+    "linkedin": "https://www.linkedin.com/in/themanikjindal",
     "links": [],
-    "isAdobeEmployee": false,
-    "isDeveloperChampion": false,
-    "hasDoc": false,
+    "isAdobeEmployee": true,
+    "isDeveloperChampion": true,
+    "hasDoc": true,
     "docUrl": "/en/authors/manik-jindal",
-    "docImage": "",
+    "docImage": "./media_1942cea8b6a0ac896a194d04c9d2288d636fdfca3.png?width=750&#x26;format=png&#x26;optimize=medium",
     "image": "/images/authors/manik-jindal.png",
     "fallbackImage": "/images/default-images/default-image-1.png",
     "latestArticle": {
       "title": "How to Forward Adobe Developer App Builder Application Logs",
       "date": "2022-01-27"
     },
-    "isComplete": false
+    "isComplete": true
   },
   {
     "name": "Michael S. Scherotter",
@@ -688,21 +688,26 @@
     "name": "Sherrie Rohde",
     "slug": "sherrie-rohde",
     "profileUrl": "https://blog.developer.adobe.com/en/authors/sherrie-rohde",
-    "title": "",
-    "linkedin": "",
-    "links": [],
-    "isAdobeEmployee": false,
+    "title": "Developer Relations, AEM",
+    "linkedin": "https://www.linkedin.com/in/sherrierohde/",
+    "links": [
+      {
+        "url": "https://developer.adobe.com/experience-manager",
+        "label": "Aem Developers"
+      }
+    ],
+    "isAdobeEmployee": true,
     "isDeveloperChampion": false,
-    "hasDoc": false,
+    "hasDoc": true,
     "docUrl": "/en/authors/sherrie-rohde",
-    "docImage": "",
+    "docImage": "./media_131e575e09b1f89a1f60b85483aba407b36c86d1b.png?width=750&#x26;format=png&#x26;optimize=medium",
     "image": "/images/authors/sherrie-rohde.png",
     "fallbackImage": "/images/default-images/default-image-1.png",
     "latestArticle": {
       "title": "How the Experience Modernization Agent Migrates Sites to Edge Delivery Services",
       "date": "2026-03-16"
     },
-    "isComplete": false
+    "isComplete": true
   },
   {
     "name": "Steve Kwak",
@@ -744,8 +749,8 @@
     "image": "/images/authors/taylor-krusen.png",
     "fallbackImage": "/images/default-images/default-image-1.png",
     "latestArticle": {
-      "title": "Inside the 24-hour Adobe Express Add-ons for Enterprise Hackathon",
-      "date": "2026-02-24"
+      "title": "Adobe Express Add-on Platform Updates: Spring 2026 Digest",
+      "date": "2026-04-20"
     },
     "isComplete": true
   },

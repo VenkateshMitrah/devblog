@@ -5,7 +5,7 @@
   gap: 48px;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 64px 24px;
+  padding: 48px 24px;
   box-sizing: border-box;
 }
 
@@ -157,6 +157,33 @@
   padding: 40px;
   color: #d93025;
   font-weight: 500;
+}
+
+.authors-header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.authors-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.authors-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.authors-header p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.author-card {
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

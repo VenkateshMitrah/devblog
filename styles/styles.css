@@ -342,6 +342,14 @@ main + footer .feds-regionPicker-wrapper > .fragment p strong > a::after {
   .feds-nav .feds-navItem .feds-navLink {
     margin-top: 5px;
   }
+
+  .feds-navItem--active > .feds-navLink:before {
+    border-bottom: none !important;
+  }
+
+  .feds-navItem--active > .feds-navLink {
+    font-weight: 500 !important;
+  }
 }
 
 /* RSS ICONS */

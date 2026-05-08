@@ -1,8 +1,27 @@
 {
-  "total": 85,
+  "total": 86,
   "offset": 0,
-  "limit": 85,
+  "limit": 86,
   "data": [
+    {
+      "path": "/en/publish/2026/05/help-your-adobe-express-add-on-reach-enterprise-users-with-granular-admin-approvals",
+      "image": "/en/publish/2026/05/media_13a4c9d41e9648c8c0ec28d344e35261ef47f9038.jpg?width=1200&format=pjpg&optimize=medium",
+      "date": "",
+      "title": "Help Your Adobe Express Add-on Reach Enterprise Users with Granular Admin Approvals",
+      "author": "Chris Zhang",
+      "description": "Enterprise and education customers can now approve individual Adobe Express add-ons instead of choosing all or nothing. For developers, that means a trusted add-on has ...",
+      "tags": "[\"Admin console\",\"user role\",\"add-ons permission\",\"extensibility\"]",
+      "imageAlt": "",
+      "robots": "",
+      "lastModified": "1778147031",
+      "Removed from Medium?": "",
+      "sortDateTimestamp": "1778112000",
+      "sortDate": "2026-05-07",
+      "sortDateTimestampLegacy": "",
+      "updatedDate": "",
+      "adobeCloud": "",
+      "adobeApp": ""
+    },
     {
       "path": "/en/publish/2026/04/adobe-developers-blog-reloaded",
       "image": "/en/publish/2026/04/media_1a7a397f869a563930ba8c29335a24a90273d72be.png?width=1200&format=pjpg&optimize=medium",
@@ -678,7 +697,7 @@
       "tags": "[\"adobe-express\",\"adobe-express-add-ons\",\"adobe-creative-cloud\",\"extensibility\",\"developer\"]",
       "imageAlt": "",
       "robots": "",
-      "lastModified": "1771238856",
+      "lastModified": "1778228501",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1729123200",
       "sortDate": "2024-10-17",
@@ -716,7 +735,7 @@
       "tags": "[\"adobe-document-cloud\",\"api\",\"adobe-acrobat\",\"pdf\",\"document\"]",
       "imageAlt": "︎",
       "robots": "",
-      "lastModified": "1771238856",
+      "lastModified": "1778227828",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1724803200",
       "sortDate": "2024-08-28",
@@ -1411,7 +1430,7 @@
     },
     {
       "path": "/en/publish/2026/03/image-behavior-test-1280-720",
-      "image": "/en/publish/2026/03/media_142918e546614f29261de1b0de574e14fa0fc846c.png?width=1200&format=pjpg&optimize=medium",
+      "image": "/en/publish/2026/03/media_1cef1057f851524593726d1f2be9f0959e13f8f58.png?width=1200&format=pjpg&optimize=medium",
       "date": "",
       "title": "Image Cropping & Layout Behavior Test – 1280 × 720",
       "author": "Devblogs",
@@ -1419,7 +1438,7 @@
       "tags": "[]",
       "imageAlt": "",
       "robots": "",
-      "lastModified": "1774353579",
+      "lastModified": "1778220852",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1584748800",
       "sortDate": "2020-03-21",
@@ -1609,7 +1628,7 @@
       "tags": "[\"creative-cloud\",\"developer\",\"adobe-cep\",\"api\",\"adobe-creative-cloud\"]",
       "imageAlt": "︎",
       "robots": "",
-      "lastModified": "1771238856",
+      "lastModified": "1778227598",
       "Removed from Medium?": "",
       "sortDateTimestamp": "1517270400",
       "sortDate": "2018-01-30",
@@ -1639,5 +1658,5 @@
     "adobeApp"
   ],
   ":type": "sheet",
-  "generatedAt": "2026-04-30T14:14:04.650Z"
+  "generatedAt": "2026-05-08T09:45:46.306Z"
 }
